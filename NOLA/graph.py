@@ -43,6 +43,8 @@ ranks = combined_df['rank'].unique()
 # Sort data by num_k for proper line connections
 combined_df = combined_df.sort_values('num_k')
 
+# Sort ranks for ordered legend
+ranks = sorted(ranks)
 
 # Plot line for each rank
 for rank in ranks:
